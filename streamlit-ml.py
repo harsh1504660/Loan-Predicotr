@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 import numpy as np
-import wget
+
 
 
 model =pickle.load(open('model.pkl','rb'))
