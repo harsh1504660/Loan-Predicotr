@@ -4,7 +4,9 @@ import numpy as np
 import wget
 
 model = 'RF_Loan_model.joblib'
-model = joblib.load(model)
+file_url = "https://github.com/c7e48ebd-eaf7-41c4-8458-9fb288222722"
+wget.download(file_url)
+model = joblib.load(model_name)
 
 def prediction(Gender,Married,Dependents,
          Education,Self_Employed,ApplicantIncome,CoapplicantIncome,
