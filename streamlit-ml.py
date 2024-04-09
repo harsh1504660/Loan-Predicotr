@@ -4,7 +4,7 @@ import numpy as np
 import wget
 
 model = 'RF_Loan_model.joblib'
-file_url = "blob:https://github.com/c7e48ebd-eaf7-41c4-8458-9fb288222722"
+file_url = "https://raw.githubusercontent.com/harsh1504660/Loan-Predictor/main/RF_Loan_model.joblib"
 wget.download(file_url)
 model = joblib.load(model_name)
 
