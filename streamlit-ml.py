@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 import wget
 
-model = 'RF_Loan_model.joblib'
+model_name = 'RF_Loan_model.joblib'
 file_url = "https://raw.githubusercontent.com/harsh1504660/Loan-Predictor/main/RF_Loan_model.joblib"
 wget.download(file_url)
 model = joblib.load(model_name)
