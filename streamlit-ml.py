@@ -1,12 +1,10 @@
-import joblib
+import pickle
 import streamlit as st
 import numpy as np
 import wget
 
-model_name = 'RF_Loan_model.joblib'
-file_url = "https://raw.githubusercontent.com/harsh1504660/Loan-Predictor/main/RF_Loan_model.joblib"
-wget.download(file_url)
-model = joblib.load(model_name)
+
+model =pickle.load(open('model.pkl','rb'))
 
 def prediction(Gender,Married,Dependents,
          Education,Self_Employed,ApplicantIncome,CoapplicantIncome,
